@@ -23,6 +23,9 @@ namespace WpfApp1
         public AddTour()
         {
             InitializeComponent();
+            DataContext = new AddToursVM();
         }
+
+        internal AddToursVM DataContext { get; private set; }
     }
 }

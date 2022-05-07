@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="AddOperator" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="оператор"/>
+        <MenuItem Header="Добавить оператора" Command="{Binding CreateOperator}"/>
+        <ComboBox ItemsSource="{Binding OperatorArray}" 
+                  SelectedItem="{Binding SelectedOperator}"
+                  DisplayMemberPath="Title" Margin="0,-41,0,0"/>
+        <Button Content="Сохранить" Command="{Binding SaveValue}"/>
     </Grid>
 </Window>

@@ -24,5 +24,10 @@ namespace WpfApp1
             InitializeComponent();
             DataContext = new AddClientVM();
         }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApp1
+namespace WpfApp1.DTO
 {
-    public class AddClient
+    public class BaseDTO
     {
+        public int ID { get; set; }
     }
 }

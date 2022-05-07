@@ -22,6 +22,7 @@ namespace WpfApp1
         public AddOperator()
         {
             InitializeComponent();
+            DataContext = new AddOperatorsVM();
         }
     }
 }
