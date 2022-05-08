@@ -8,27 +8,69 @@
         Title="Туристическое агенство" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition />
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="69.04"/>
+            <RowDefinition Height="364.883"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Menu>
-            <MenuItem Header="Cправочники">
-                <MenuItem Header="Клиенты">
-                    <MenuItem Header="Добавить клиента" Command="{Binding CreateGroup}"/>
-                    <MenuItem Header="Список клиентов" Command="{Binding ViewGroups}"/>
-                </MenuItem>
-                <MenuItem Header="Путевки">
-                    <MenuItem Header="Добавить путевку" Command="{Binding CreateStudent}"/>
-                    <MenuItem Header="Каталок путевок" Command="{Binding ViewStudents}"/>
-                </MenuItem>
-                <MenuItem Header="Операторы">
-                    <MenuItem Header="Список операторов" Command="{Binding CreateStudent}"/>
-                </MenuItem>
-                <MenuItem Header="Оплата">
-                    <MenuItem Header="Сведения об оплате" Command="{Binding StudentValues}"/>
-                </MenuItem>
-            </MenuItem>
-        </Menu>
-        <Frame Content="{Binding CurrentPage}" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Frame Content="{Binding CurrentPage}" NavigationUIVisibility="Hidden" Margin="8,10,-9,-8" Grid.ColumnSpan="3" Grid.RowSpan="5"/>
+        <Button Click="ButtonClick" Content="Cписок клиентов" Margin="24,45,644,270" Grid.Row="2"/>
+        <Button Click="ButtonClick2" Content="Добавить Клиента" Margin="24,123,644,192" Grid.Row="2"/>
+        <Button Click="ButtonClick3" Content="Список Операторов" Margin="208,45,460,270" Grid.Row="2"/>
+        <Button Click="ButtonClick4" Content="Добавить оператора" Margin="208,123,460,192" Grid.Row="2"/>
+        <Button Click="ButtonClick5" Content="Каталог путевок" Margin="427,45,240,270" Grid.Row="2"/>
+        <Button Click="ButtonClick6" Content="Добавить путевку" Margin="428,123,240,192" Grid.Row="2"/>
+        <Button Click="ButtonClick7" Content="Сведения об оплатах" Margin="637,45,31,270" Grid.Row="2" RenderTransformOrigin="0.499,1.704"/>
+        <Button Click="ButtonClick8" Content="Добавить оплату" Margin="637,123,31,192" Grid.Row="2"/>
+        <TextBlock TextWrapping="Wrap" Text="Клиенты" Margin="24,0,-24,37" Grid.Row="1" FontSize="24" Grid.ColumnSpan="3"/>
+        <TextBlock TextWrapping="Wrap" Text="Операторы" Margin="198,0,-198,37" Grid.Row="1" FontSize="24" Grid.ColumnSpan="3"/>
+        <TextBlock TextWrapping="Wrap" Text="Путевки" Margin="436,0,-436,37" Grid.Row="1" FontSize="24" Grid.ColumnSpan="3"/>
+        <TextBlock TextWrapping="Wrap" Text="Оплата" Margin="656,0,-656,37" Grid.Row="1" FontSize="24" Grid.ColumnSpan="3"/>
+        <Line Stretch="Fill" Stroke="#FF493F3F" X2="1" RenderTransformOrigin="0.5,0.5" Fill="#FFC15E5E" Margin="-73,149,399,215" Grid.Row="2">
+            <Line.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Line.RenderTransform>
+        </Line>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="0,67,-24,0" Grid.Row="1" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="152,149,186,214" Grid.Row="2" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" Margin="375,144,-37,219" Grid.Row="2" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="3">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
     </Grid>
 </Window>

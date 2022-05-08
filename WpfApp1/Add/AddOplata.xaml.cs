@@ -12,17 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace WpfApp1.Add
 {
     /// <summary>
-    /// Логика взаимодействия для ViewClients.xaml
+    /// Логика взаимодействия для AddOplata.xaml
     /// </summary>
-    public partial class ViewClients : Window
+    public partial class AddOplata : Window
     {
-        public ViewClients()
+        public AddOplata()
         {
-         InitializeComponent();
-         DataContext = new ViewClientsVM();
+            InitializeComponent();
         }
     }
 }

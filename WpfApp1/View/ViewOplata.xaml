@@ -5,22 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="ViewOplata">
+            Title="Cведения об оплате">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="229*"/>
+            <ColumnDefinition Width="571*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <ListView ItemsSource="{Binding Oplata}">
+        <ListView ItemsSource="{Binding Operators}" Grid.ColumnSpan="2">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Сумма"  DisplayMemberBinding="{Binding Price}"/>
                     <GridViewColumn Header="Номер клиента"  DisplayMemberBinding="{Binding idclient}"/>
-                    <GridViewColumn Header="Дата заказа"  DisplayMemberBinding="{Binding datazakaza}"/>
+                    <GridViewColumn Header="Номер заказа"  DisplayMemberBinding="{Binding nomerzakaza}"/>
                 </GridView>
             </ListView.View>
         </ListView>
-        <Grid Grid.Row="1" HorizontalAlignment="Center" >
+        <Grid HorizontalAlignment="Left" Grid.ColumnSpan="2" Margin="212,412,0,0" Grid.RowSpan="2" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition />
@@ -40,4 +44,3 @@
         </Grid>
     </Grid>
 </Window>
-

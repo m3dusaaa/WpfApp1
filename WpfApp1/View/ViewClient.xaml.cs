@@ -10,22 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для AddTour.xaml
+    /// Логика взаимодействия для ViewClients.xaml
     /// </summary>
-    public partial class AddTour : Window
+    public partial class ViewClient : Window
     {
-        public AddTour()
+        public ViewClient()
         {
-            InitializeComponent();
-            DataContext = new AddToursVM();
+         InitializeComponent();
+         DataContext = new ViewClientVM();
         }
-
-        internal AddToursVM DataContext { get; private set; }
     }
 }

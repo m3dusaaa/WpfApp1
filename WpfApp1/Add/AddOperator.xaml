@@ -5,13 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="AddOperator" Height="450" Width="800">
-    <Grid>
-        <Label Content="оператор"/>
-        <MenuItem Header="Добавить оператора" Command="{Binding CreateOperator}"/>
-        <ComboBox ItemsSource="{Binding OperatorArray}" 
-                  SelectedItem="{Binding SelectedOperator}"
-                  DisplayMemberPath="Title" Margin="0,-41,0,0"/>
-        <Button Content="Сохранить" Command="{Binding SaveValue}"/>
+        Title="Добавить оператора" Height="450" Width="800">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Button Content="Сохранить" Command="{Binding AddOperator}" Margin="70,376,70,37" Grid.Row="1"/>
+        <TextBlock Margin="10,20,242,397" Grid.Row="1" ><Run Language="ru-ru" Text="ФИО Оператора"/></TextBlock>
+        <TextBlock Margin="10,65,266,355" Grid.Row="1" ><Run Text="Номер "/><Run Text=" "/><Run Language="ru-ru" Text="оператора"/></TextBlock>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="117,65,52,347" Grid.Row="1"/>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="112,20,58,392" Grid.Row="1"/>
+         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
     </Grid>
 </Window>

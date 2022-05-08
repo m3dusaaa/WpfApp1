@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="ViewTour">
+        Title="Каталог путевок">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -28,7 +28,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Предыдущий заказ" Command="{Binding ViewBack}"/>
+            <Button Content="Предыдущая путевка" Command="{Binding ViewBack}"/>
             <ListBox Grid.Column="1" MinWidth="200" MaxWidth="500" ItemsSource="{Binding WindowIndexes}" SelectedItem="{Binding SelectedIndex}">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -36,7 +36,7 @@
                     </ItemsPanelTemplate>
                 </ListBox.ItemsPanel>
             </ListBox>
-            <Button Grid.Column="2" Content="Следующий заказ" Command="{Binding ViewForward}"/>
+            <Button Grid.Column="2" Content="Следующая путевка" Command="{Binding ViewForward}"/>
             <ComboBox Grid.Column="3" SelectedItem="{Binding ViewRowsCount}" ItemsSource="{Binding RowsCountVariants}" />
         </Grid>
     </Grid>

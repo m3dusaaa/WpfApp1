@@ -10,7 +10,7 @@ namespace WpfApp1.DTO
     internal class Tour
     {
         [Table("tour")]
-        public class Client : BaseDTO
+        public class Tours : BaseDTO
         {
             [Column("country")]
             public string Country { get; set; }

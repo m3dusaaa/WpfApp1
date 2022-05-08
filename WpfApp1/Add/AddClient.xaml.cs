@@ -14,20 +14,15 @@ using System.Windows.Shapes;
 
 namespace WpfApp1
 {
-    /// <summary>
-    /// Логика взаимодействия для AddClient.xaml
-    /// </summary>
-    public partial class AddClientVM : Window
+    
+    public partial class AddClient : Window
     {
-        public AddClientVM()
+        public AddClient()
         {
             InitializeComponent();
-            DataContext = new AddClientVM();
+            DataContext = new AddClientsVM();
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
+

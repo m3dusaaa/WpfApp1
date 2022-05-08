@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApp1
+namespace WpfApp1.VM
 {
-    internal class ViewClientsVM
+    internal class MainVM
     {
     }
 }
