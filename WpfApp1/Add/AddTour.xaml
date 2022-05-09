@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Добавить путевку">
 
-    <Grid Background="YellowGreen">
+    <Grid Background="YellowGreen" Margin="-1,23,1,-23">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
@@ -21,10 +21,12 @@
         <TextBlock Margin="10,111,242,306" Grid.Row="1" ><Run Language="ru-ru" Text="Длительность
  пребывания"/></TextBlock>
         <TextBlock Margin="10,151,242,266" Grid.Row="1" ><Run Language="ru-ru" Text="Отель"/></TextBlock>
-        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="112,65,58,347" Grid.Row="1"/>
-        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="112,20,58,392" Grid.Row="1"/>
-        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="170,111,0,302" Grid.Row="1" />
-        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="85,151,85,262" Grid.Row="1" />
+        <TextBlock Margin="10,321,290,98" Grid.Row="1" ><Run Language="ru-ru" Text="Стоимость"/></TextBlock>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="70,65,139,355" Grid.Row="1"/>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="70,20,139,400" Grid.Row="1"/>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="167,111,42,309" Grid.Row="1"/>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="100,321,221,98" Grid.Row="1" TextChanged="TextBox_TextChanged" />
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="61,151,147,269" Grid.Row="1"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>

@@ -27,5 +27,10 @@ namespace WpfApp1
         }
 
         internal AddToursVM DataContext { get; private set; }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
