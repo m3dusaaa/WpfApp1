@@ -19,8 +19,7 @@ namespace WpfApp1
     {
         public AddClient()
         {
-            InitializeComponent();
-            DataContext = new AddClientsVM();
+            
         }
 
     }

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="Туристическое агенство" Height="450" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <Grid Background="YellowGreen">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="69.04"/>
@@ -20,14 +20,14 @@
             <ColumnDefinition Width="auto"/>
         </Grid.ColumnDefinitions>
         <Frame Content="{Binding CurrentPage}" NavigationUIVisibility="Hidden" Margin="8,10,-9,-8" Grid.ColumnSpan="3" Grid.RowSpan="5"/>
-        <Button Click="ButtonClick" Content="Cписок клиентов" Margin="24,45,644,270" Grid.Row="2"/>
-        <Button Click="ButtonClick2" Content="Добавить Клиента" Margin="24,123,644,192" Grid.Row="2"/>
-        <Button Click="ButtonClick3" Content="Список Операторов" Margin="208,45,460,270" Grid.Row="2"/>
-        <Button Click="ButtonClick4" Content="Добавить оператора" Margin="208,123,460,192" Grid.Row="2"/>
-        <Button Click="ButtonClick5" Content="Каталог путевок" Margin="427,45,240,270" Grid.Row="2"/>
-        <Button Click="ButtonClick6" Content="Добавить путевку" Margin="428,123,240,192" Grid.Row="2"/>
-        <Button Click="ButtonClick7" Content="Сведения об оплатах" Margin="637,45,31,270" Grid.Row="2" RenderTransformOrigin="0.499,1.704"/>
-        <Button Click="ButtonClick8" Content="Добавить оплату" Margin="637,123,31,192" Grid.Row="2"/>
+        <Button Click="ButtonClick" Background="AliceBlue" Content="Cписок клиентов" Margin="24,45,644,270" Grid.Row="2"/>
+        <Button Click="ButtonClick2" Background="AliceBlue" Content="Добавить Клиента" Margin="24,123,644,192" Grid.Row="2"/>
+        <Button Click="ButtonClick3" Background="AliceBlue" Content="Список Операторов" Margin="208,45,460,270" Grid.Row="2"/>
+        <Button Click="ButtonClick4" Background="AliceBlue" Content="Добавить оператора" Margin="208,123,460,192" Grid.Row="2"/>
+        <Button Click="ButtonClick5" Background="AliceBlue" Content="Каталог путевок" Margin="427,45,240,270" Grid.Row="2"/>
+        <Button Click="ButtonClick6" Background="AliceBlue" Content="Добавить путевку" Margin="428,123,240,192" Grid.Row="2"/>
+        <Button Click="ButtonClick7" Background="AliceBlue" Content="Сведения об оплатах" Margin="637,45,31,270" Grid.Row="2" RenderTransformOrigin="0.499,1.704"/>
+        <Button Click="ButtonClick8" Background="AliceBlue" Content="Добавить оплату" Margin="637,123,31,192" Grid.Row="2"/>
         <TextBlock TextWrapping="Wrap" Text="Клиенты" Margin="24,0,-24,37" Grid.Row="1" FontSize="24" Grid.ColumnSpan="3"/>
         <TextBlock TextWrapping="Wrap" Text="Операторы" Margin="198,0,-198,37" Grid.Row="1" FontSize="24" Grid.ColumnSpan="3"/>
         <TextBlock TextWrapping="Wrap" Text="Путевки" Margin="436,0,-436,37" Grid.Row="1" FontSize="24" Grid.ColumnSpan="3"/>

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1.Add"
         mc:Ignorable="d"
         Title="Добавить клиента" Height="450" Width="800">
- <Grid >
+    <Grid Background="YellowGreen">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>

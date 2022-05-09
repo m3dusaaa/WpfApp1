@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-  Title="Список клиентов">
-    <Grid>
+  Title="Список клиентов" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="YellowGreen">
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition Height="Auto"/>
@@ -26,7 +26,7 @@
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Предыдущий" Command="{Binding ViewBack}"/>
+            <Button Content="Предыдущий" Background="AliceBlue" Command="{Binding ViewBack}"/>
             <ListBox Grid.Column="1" MinWidth="200" MaxWidth="500" ItemsSource="{Binding WindowIndexes}" SelectedItem="{Binding SelectedIndex}">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -34,7 +34,7 @@
                     </ItemsPanelTemplate>
                 </ListBox.ItemsPanel>
             </ListBox>
-            <Button Grid.Column="2" Content="Следующий" Command="{Binding ViewForward}"/>
+            <Button Grid.Column="2" Content="Следующий" Background="AliceBlue" Command="{Binding ViewForward}"/>
             <ComboBox Grid.Column="3" SelectedItem="{Binding ViewRowsCount}" ItemsSource="{Binding RowsCountVariants}" />
         </Grid>
     </Grid>

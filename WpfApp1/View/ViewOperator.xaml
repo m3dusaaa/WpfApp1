@@ -5,32 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="Список операторов">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="229*"/>
-            <ColumnDefinition Width="571*"/>
-        </Grid.ColumnDefinitions>
+        Title="Список операторов"  Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Background="YellowGreen">
         <Grid.RowDefinitions>
             <RowDefinition />
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <ListView ItemsSource="{Binding Operators}" Grid.ColumnSpan="2">
+        <ListView ItemsSource="{Binding Tour}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Номер оператора"  DisplayMemberBinding="{Binding idoperator}"/>
-                    <GridViewColumn Header="ФИО Оператора"  DisplayMemberBinding="{Binding operatorFIO}"/>
-                </GridView>
+                    <GridViewColumn Header="ФИО оператора"  DisplayMemberBinding="{Binding operatorFIO}"/>
+                    <GridViewColumn Header="Номер телефона"  DisplayMemberBinding="{Binding operatorFIO}"/>
+                  </GridView>
             </ListView.View>
         </ListView>
-        <Grid HorizontalAlignment="Left" Grid.ColumnSpan="2" Margin="212,412,0,0" Grid.RowSpan="2" >
+        <Grid Grid.Row="1" HorizontalAlignment="Center" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition />
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Предыдущий" Command="{Binding ViewBack}"/>
+            <Button Content="Предыдущий оператор" Background="AliceBlue" Command="{Binding ViewBack}"/>
             <ListBox Grid.Column="1" MinWidth="200" MaxWidth="500" ItemsSource="{Binding WindowIndexes}" SelectedItem="{Binding SelectedIndex}">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -38,7 +35,7 @@
                     </ItemsPanelTemplate>
                 </ListBox.ItemsPanel>
             </ListBox>
-            <Button Grid.Column="2" Content="Следующий" Command="{Binding ViewForward}"/>
+            <Button Grid.Column="2" Background="AliceBlue" Content="Следующий оператор" Command="{Binding ViewForward}"/>
             <ComboBox Grid.Column="3" SelectedItem="{Binding ViewRowsCount}" ItemsSource="{Binding RowsCountVariants}" />
         </Grid>
     </Grid>

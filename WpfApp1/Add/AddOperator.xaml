@@ -6,19 +6,21 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         Title="Добавить оператора" Height="450" Width="800">
-    <Grid >
+    <Grid Background="YellowGreen">
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button Content="Сохранить" Command="{Binding AddOperator}" Margin="70,376,70,37" Grid.Row="1"/>
+        <Button Content="Сохранить" Background="AliceBlue" Command="{Binding AddOperator}" Margin="70,376,70,37" Grid.Row="1"/>
         <TextBlock Margin="10,20,242,397" Grid.Row="1" ><Run Language="ru-ru" Text="ФИО Оператора"/></TextBlock>
         <TextBlock Margin="10,65,266,355" Grid.Row="1" ><Run Text="Номер "/><Run Text=" "/><Run Language="ru-ru" Text="оператора"/></TextBlock>
+        <TextBlock Margin="10,108,266,312" Grid.Row="1" ><Run Text="Номер "/><Run Text=" "/><Run Language="ru-ru" Text="телефона"/></TextBlock>
         <TextBox RenderTransformOrigin="-0.14,0.517" Margin="117,65,52,347" Grid.Row="1"/>
-        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="112,20,58,392" Grid.Row="1"/>
-         <Grid.ColumnDefinitions>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="117,20,53,392" Grid.Row="1"/>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="116,108,53,304" Grid.Row="1"/>
+        <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
