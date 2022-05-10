@@ -16,6 +16,7 @@
                 <GridView>
   <GridViewColumn Header="ФИО оператора"  DisplayMemberBinding="{Binding operatorFIO}"/>
                     <GridViewColumn Header="Номер телефона"  DisplayMemberBinding="{Binding operatorFIO}"/>
+                    <GridViewColumn Header="ID оператора"  DisplayMemberBinding="{Binding idoperator}"/>
                   </GridView>
             </ListView.View>
         </ListView>

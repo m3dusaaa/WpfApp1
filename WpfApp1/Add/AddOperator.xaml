@@ -17,8 +17,10 @@
         <TextBlock Margin="10,20,242,397" Grid.Row="1" ><Run Language="ru-ru" Text="ФИО Оператора"/></TextBlock>
 
         <TextBlock Margin="10,68,266,352" Grid.Row="1" ><Run Text="Номер "/><Run Text=" "/><Run Language="ru-ru" Text="телефона"/></TextBlock>
+        <TextBlock Margin="10,115,266,305" Grid.Row="1" ><Run Text="ID "/><Run Text=" "/><Run Language="ru-ru" Text="оператора"/></TextBlock>
         <TextBox RenderTransformOrigin="-0.14,0.517" Margin="117,20,53,392" Grid.Row="1"/>
         <TextBox RenderTransformOrigin="-0.14,0.517" Margin="116,64,53,348" Grid.Row="1"/>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="116,111,53,301" Grid.Row="1"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
