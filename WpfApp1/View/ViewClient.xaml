@@ -17,6 +17,7 @@
                     <GridViewColumn Header="Номер клиента"  DisplayMemberBinding="{Binding idclient}"/>
                     <GridViewColumn Header="ФИО Клиента"  DisplayMemberBinding="{Binding clientFIO}"/>
                     <GridViewColumn Header="Дата рождения"  DisplayMemberBinding="{Binding clientbirthday}"/>
+                    <GridViewColumn Header="ID обслуживающего оператора"  DisplayMemberBinding="{Binding idoperator}"/>
                 </GridView>
             </ListView.View>
         </ListView>

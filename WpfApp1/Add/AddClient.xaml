@@ -20,8 +20,10 @@
         <TextBlock Margin="10,20,242,397" Grid.Row="1" ><Run Language="ru-ru" Text="ID Клиента"/></TextBlock>
         <TextBlock Margin="10,65,266,355" Grid.Row="1" ><Run Text="ФИО "/><Run Text=" "/><Run Language="ru-ru" Text="клиента"/></TextBlock>
         <TextBlock Margin="10,108,242,309" Grid.Row="1" ><Run Language="ru-ru" Text="Дата рождения"/></TextBlock>
+        <TextBlock Margin="10,150,242,267" Grid.Row="1" ><Run Language="ru-ru" Text="ID обслуживающего оператора"/></TextBlock>
         <TextBox RenderTransformOrigin="-0.14,0.517" Margin="112,65,57,347" Grid.Row="1"/>
         <TextBox RenderTransformOrigin="-0.14,0.517" Margin="112,20,58,392" Grid.Row="1"/>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="213,145,132,267" Grid.Row="1"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>
