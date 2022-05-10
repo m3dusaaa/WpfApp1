@@ -14,9 +14,11 @@
         <ListView ItemsSource="{Binding Tour}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Сумма"  DisplayMemberBinding="{Binding price}"/>
-                    <GridViewColumn Header="Номер клиента"  DisplayMemberBinding="{Binding idclient}"/>
+                    <GridViewColumn Header="Дата заказа"  DisplayMemberBinding="{Binding datazakaza}"/>
+                    <GridViewColumn Header="ID клиента"  DisplayMemberBinding="{Binding idclient}"/>
                     <GridViewColumn Header="Номер заказа"  DisplayMemberBinding="{Binding ordernum}"/>
+                    <GridViewColumn Header="ID оператора"  DisplayMemberBinding="{Binding idoperator}"/>
+                    <GridViewColumn Header="Стоимость"  DisplayMemberBinding="{Binding summa}"/>
               </GridView>
             </ListView.View>
         </ListView>

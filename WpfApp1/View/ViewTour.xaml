@@ -16,8 +16,11 @@
                 <GridView>
                     <GridViewColumn Header="Страна"  DisplayMemberBinding="{Binding country}"/>
                     <GridViewColumn Header="Город"  DisplayMemberBinding="{Binding idclient}"/>
-                    <GridViewColumn Header="Длительность пребывания"  DisplayMemberBinding="{Binding time}"/>
+                    <GridViewColumn Header="Номер заказа"  DisplayMemberBinding="{Binding order_num}"/>
+                    <GridViewColumn Header="Длительность"  DisplayMemberBinding="{Binding time}"/>
                     <GridViewColumn Header="Отель"  DisplayMemberBinding="{Binding hotel}"/>
+                    <GridViewColumn Header="Стоимость"  DisplayMemberBinding="{Binding summa}"/>
+                    <GridViewColumn Header="ID оператора"  DisplayMemberBinding="{Binding idoperator}"/>
                 </GridView>
             </ListView.View>
         </ListView>

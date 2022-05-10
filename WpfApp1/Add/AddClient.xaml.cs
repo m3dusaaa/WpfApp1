@@ -14,14 +14,14 @@ using System.Windows.Shapes;
 
 namespace WpfApp1
 {
-    
+
     public partial class AddClient : Window
     {
         public AddClient()
         {
-            
+           
         }
-
     }
 }
+
 

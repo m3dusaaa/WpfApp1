@@ -13,10 +13,14 @@
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+        <DatePicker x:Name="datePicker"
+              SelectedDate="01/01/22"
+              SelectedDateFormat="Long" Margin="112,106,149,307" Grid.Row="1"/>
         <Button Content="Сохранить" Command="{Binding AddClient}" Margin="70,376,70,37" Grid.Row="1"/>
-        <TextBlock Margin="10,20,242,397" Grid.Row="1" ><Run Language="ru-ru" Text="ФИО Клиента"/></TextBlock>
-        <TextBlock Margin="10,65,266,355" Grid.Row="1" ><Run Text="Номер "/><Run Text=" "/><Run Language="ru-ru" Text="клиента"/></TextBlock>
-        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="117,65,52,347" Grid.Row="1"/>
+        <TextBlock Margin="10,20,242,397" Grid.Row="1" ><Run Language="ru-ru" Text="ID Клиента"/></TextBlock>
+        <TextBlock Margin="10,65,266,355" Grid.Row="1" ><Run Text="ФИО "/><Run Text=" "/><Run Language="ru-ru" Text="клиента"/></TextBlock>
+        <TextBlock Margin="10,108,242,309" Grid.Row="1" ><Run Language="ru-ru" Text="Дата рождения"/></TextBlock>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="112,65,57,347" Grid.Row="1"/>
         <TextBox RenderTransformOrigin="-0.14,0.517" Margin="112,20,58,392" Grid.Row="1"/>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>

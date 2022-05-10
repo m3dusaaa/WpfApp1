@@ -18,15 +18,18 @@
         <Button Content="Сохранить" Background="AliceBlue" Command="{Binding AddTour}" Margin="70,376,70,37" Grid.Row="1"/>
         <TextBlock Margin="10,20,290,398" Grid.Row="1" ><Run Language="ru-ru" Text="Страна"/></TextBlock>
         <TextBlock Margin="10,65,266,355" Grid.Row="1" ><Run  Text="Город"/></TextBlock>
-        <TextBlock Margin="10,111,242,306" Grid.Row="1" ><Run Language="ru-ru" Text="Длительность
- пребывания"/></TextBlock>
-        <TextBlock Margin="10,151,242,266" Grid.Row="1" ><Run Language="ru-ru" Text="Отель"/></TextBlock>
-        <TextBlock Margin="10,321,290,98" Grid.Row="1" ><Run Language="ru-ru" Text="Стоимость"/></TextBlock>
+        <TextBlock Margin="10,111,242,306" Grid.Row="1" ><Run Language="ru-ru" Text="Номер заказа"/></TextBlock>
+        <TextBlock Margin="10,151,242,266" Grid.Row="1" ><Run Language="ru-ru" Text="Длительность"/></TextBlock>
+        <TextBlock Margin="5,231,295,189" Grid.Row="1" ><Run Language="ru-ru" Text="Стоимость"/></TextBlock>
+        <TextBlock Margin="10,189,290,230" Grid.Row="1" ><Run Language="ru-ru" Text="Отель"/></TextBlock>
+        <TextBlock Margin="5,269,295,150" Grid.Row="1" ><Run Language="ru-ru" Text="ID оператора"/></TextBlock>
         <TextBox RenderTransformOrigin="-0.14,0.517" Margin="70,65,139,355" Grid.Row="1"/>
         <TextBox RenderTransformOrigin="-0.14,0.517" Margin="70,20,139,400" Grid.Row="1"/>
-        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="167,111,42,309" Grid.Row="1"/>
-        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="100,321,221,98" Grid.Row="1" TextChanged="TextBox_TextChanged" />
-        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="61,151,147,269" Grid.Row="1"/>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="100,111,109,309" Grid.Row="1"/>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="99,230,205,189" Grid.Row="1" TextChanged="TextBox_TextChanged" />
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="100,151,108,269" Grid.Row="1"/>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="99,189,109,231" Grid.Row="1"/>
+        <TextBox RenderTransformOrigin="-0.14,0.517" Margin="99,269,205,150" Grid.Row="1" TextChanged="TextBox_TextChanged" />
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="auto"/>
             <ColumnDefinition Width="auto"/>

@@ -14,8 +14,7 @@
         <ListView ItemsSource="{Binding Tour}">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Номер оператора"  DisplayMemberBinding="{Binding idoperator}"/>
-                    <GridViewColumn Header="ФИО оператора"  DisplayMemberBinding="{Binding operatorFIO}"/>
+  <GridViewColumn Header="ФИО оператора"  DisplayMemberBinding="{Binding operatorFIO}"/>
                     <GridViewColumn Header="Номер телефона"  DisplayMemberBinding="{Binding operatorFIO}"/>
                   </GridView>
             </ListView.View>
