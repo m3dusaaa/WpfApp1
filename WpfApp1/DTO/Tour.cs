@@ -7,21 +7,23 @@ using System.Threading.Tasks;
 
 namespace WpfApp1.DTO
 {
-    internal class Tour
-    {
         [Table("tour")]
-        public class Tours : BaseDTO
+        public class Tour : BaseDTO
         {
             [Column("country")]
             public string Country { get; set; }
             [Column("city")]
             public string City { get; set; }
-            [Column("Time")]
-            public string Time { get; set; }
-            [Column("Uslugi")]
-            public DateTime Uslugi { get; set; }
-            [Column("cliend_id")]
-            public int ClientId { get; set; }
+            [Column("order_num")]
+            public int NomerZakaza { get; set; }
+            [Column("time")]
+            public string Dlitelnost { get; set; }
+            [Column("summa")]
+            public string Price { get; set; }
+            [Column("hotel")]
+            public DateTime hotel { get; set; }
+            [Column("idoperator")]
+            public int IDOperator { get; set; }
         }
     }
-}
+

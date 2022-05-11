@@ -20,17 +20,10 @@ namespace WpfApp1
     /// </summary>
     public partial class AddTour : Window
     {
-        public AddTour()
+        public AddTour(AddTourVM addToursVM)
         {
             InitializeComponent();
-            DataContext = new AddToursVM();
-        }
-
-        internal AddToursVM DataContext { get; private set; }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            DataContext = new AddTourVM();
         }
     }
 }

@@ -6,16 +6,19 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WpfApp1.DTO
+{ 
+[Table("operator")]
+public class Oplata : BaseDTO
 {
-    internal class Oplata
-    {
-        [Column("Price")]
-        public string Price { get; set; }
-        [Column("datetName")]
-        public string Date { get; set; }
+    [Column("datazakaza")]
+        public DateTime Zakaza { get; set; }
         [Column("client_id")]
         public string idclient { get; set; }
-        [Column("oplata_id")]
-        public int OplataId { get; set; }
+        [Column("order_num")]
+        public int NomerZakaza { get; set; }
+        [Column("summa")]
+        public string Price { get; set; }
+        [Column("idoperator")]
+        public int IDOperator { get; set; }
     }
 }

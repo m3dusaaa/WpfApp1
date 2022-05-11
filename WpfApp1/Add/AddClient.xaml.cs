@@ -12,16 +12,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace WpfApp1.Add
 {
-
+    /// <summary>
+    /// Логика взаимодействия для AddClient.xaml
+    /// </summary>
     public partial class AddClient : Window
     {
         public AddClient()
         {
-
+            InitializeComponent();
+            DataContext = new AddClientVM();
+        
         }
     }
 }
-
-

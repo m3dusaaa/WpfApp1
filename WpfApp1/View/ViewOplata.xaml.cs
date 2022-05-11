@@ -23,10 +23,7 @@ namespace WpfApp1
         {
             InitializeComponent();
             DataContext = new ViewOplataVM();
-        }
-
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
+      
 
         }
     }

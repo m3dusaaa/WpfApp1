@@ -7,21 +7,16 @@ using System.Threading.Tasks;
 
 namespace WpfApp1.DTO
 {
-    internal class Operator
-    {
         [Table("operator")]
-        public class Operators : BaseDTO
+        public class Operator : BaseDTO
         {
-            [Column("lastName")]
-            public string LastName { get; set; }
-            [Column("firstName")]
-            public string FirstName { get; set; }
-            [Column("patronymicName")]
-            public string PatronymicName { get; set; }
-            [Column("birthday")]
-            public DateTime Birthday { get; set; }
-            [Column("client_id")]
-            public int ClientId { get; set; }
+        [Column("operatorFIO")]
+        public string OperatorFIO { get; set; }
+        [Column("phone")]
+        public string PhoneNumber { get; set; }
+        [Column("idoperator")]
+        public int OperatorID { get; set; }
+       
         }
     }
-}
+

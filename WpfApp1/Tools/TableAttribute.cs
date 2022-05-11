@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace WpfApp15.Tools
+namespace WpfApp1.Tools
 {
     internal class TableAttribute : Attribute
     {

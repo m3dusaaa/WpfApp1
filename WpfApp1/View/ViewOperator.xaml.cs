@@ -19,15 +19,10 @@ namespace WpfApp1
     /// </summary>
     public partial class ViewOperator : Window
     {
-        public ViewOperator()
+        public ViewOperator(object p)
         {
             InitializeComponent();
             DataContext = new ViewOperatorVM();
-        }
-
-        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }
